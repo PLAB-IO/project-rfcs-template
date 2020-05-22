@@ -1,0 +1,14 @@
+[book]
+title = "Your Awesome Project Book"
+language = "en"
+
+[build]
+create-missing = false
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "coal"
+no-section-label = true
+# google-analytics = "123456"
+git-repository-url = "https://github.com/rust-lang/mdBook"
+git-repository-icon = "fa-github"
