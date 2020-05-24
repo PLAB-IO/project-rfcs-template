@@ -1,4 +1,4 @@
-# TITLE
+# RFC Template
 
 ## How to Use It
 

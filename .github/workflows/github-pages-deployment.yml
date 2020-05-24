@@ -1,0 +1,23 @@
+name: Deployment
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: Publish website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        run: |
+          cargo install mdbook
+          cp README.md src/misc/introduction.md
+          ./bin/generate-rfcs-summary.sh
+          mdbook build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./book

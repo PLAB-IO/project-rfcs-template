@@ -1,5 +1,5 @@
 [book]
-title = "Your Awesome Project Book"
+title = "$PROJECT_NAME"
 language = "en"
 
 [build]
@@ -10,5 +10,5 @@ default-theme = "light"
 preferred-dark-theme = "coal"
 no-section-label = true
 # google-analytics = "123456"
-git-repository-url = "https://github.com/rust-lang/mdBook"
+git-repository-url = "https://github.com/$ORG/$REPO"
 git-repository-icon = "fa-github"

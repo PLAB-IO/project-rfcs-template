@@ -16,5 +16,5 @@ do
 done >> summary-rfcs.tmp
 
 rfcs=$(cat summary-rfcs.tmp | tr '\n' '\r')
-sed -e "s/?RFC_LIST?/$rfcs/" $summary_file | tr '\r' '\n' > src/SUMMARY.md
+sed -e "s#?RFC_LIST?#$rfcs#" $summary_file | tr '\r' '\n' > src/SUMMARY.md
 rm -rf summary-rfcs.tmp
