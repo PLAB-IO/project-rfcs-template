@@ -31,6 +31,8 @@ read contact
 sed -i $sedOsxFixture "s/\$PROJECT_NAME/$repository_name/g" book.toml
 sed -i $sedOsxFixture "s/\$ORG/$org_name/g" book.toml
 sed -i $sedOsxFixture "s/\$REPO/$repository_name/g" book.toml
+sed -i $sedOsxFixture "s/\$ORG/$org_name/g" src/0000-rfc-template.md
+sed -i $sedOsxFixture "s/\$REPO/$repository_name/g" src/0000-rfc-template.md
 sed -i $sedOsxFixture "s/\$CONTACT_METHOD/$contact/g" src/misc/code-of-conduct.md
 
 if booleanQuestionMark "Did you want remove rfc example?";
