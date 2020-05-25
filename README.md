@@ -4,7 +4,7 @@ RFCs are a process of documenting proposal for technical change.
 It help to structure project architecture around collective discussions with your community.
 
 This repository is a github template that will help you easily bootstrap your RFC book.
-You can view the demo at [https://plab-io.github.io/project-rfcs-template/](https://plab-io.github.io/project-rfcs-template/]).
+You can view the demo at [https://plab-io.github.io/project-rfcs-template/](https://plab-io.github.io/project-rfcs-template).
 
 ## What's included
 
