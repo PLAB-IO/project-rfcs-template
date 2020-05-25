@@ -14,6 +14,7 @@ jobs:
         run: |
           cargo install mdbook
           cp README.md src/misc/introduction.md
+          printf 'plab\nproject-rfcs-template\nabuse@plab.io\n' | ./bin/bootstrap.sh
           ./bin/generate-rfcs-summary.sh
           mdbook build
       - name: Deploy

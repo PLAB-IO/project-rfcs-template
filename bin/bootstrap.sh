@@ -35,5 +35,5 @@ sed -i $sedOsxFixture "s/\$CONTACT_METHOD/$contact/g" src/misc/code-of-conduct.m
 
 if booleanQuestionMark "Did you want remove rfc example?";
 then
-  git rm src/rfcs/0000-rfc-awsome-rfc-template.md
+  git rm src/rfcs/0000-awesome-rfc-template.md
 fi
